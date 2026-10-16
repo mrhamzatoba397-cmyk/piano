@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: url(bg.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #keydetect{
+            display: flex;
+        }
+        .box1{
+            width: 350px;
+            height: 450px;
+            display: flex;
+            position: relative;
+            margin: 60px auto;
+        }
+        .box1 .a,.s,.d{
+            width: 110px;
+            height: 450px;
+            background-color: white;
+            color: black;
+            margin: 0 10px;
+            text-align: center;
+            align-content: end;
+        }
+        .box1 .w,.E{
+            width: 80px;
+            height: 350px;
+            background-color: black;
+            color: white;
+            position: absolute;
+            text-align: center;
+            align-content: end;
+        }
+        .box1 .w{
+            left: 22%;
+        }
+        .box1 .E{
+            left: 56%;
+        }
+        .box2{
+            width: 470px;
+            height: 450px;
+            display: flex;
+            position: relative;
+            margin: 60px auto;
+        }
+        .box2 .f,.g,.h,.j{
+            width: 110px;
+            height: 450px;
+            background-color: white;
+            color: black;
+            margin: 0 10px;
+            text-align: center;
+            align-content: end;
+        }
+        .box2 .t,.y,.u{
+            width: 80px;
+            height: 350px;
+            background-color: black;
+            color: white;
+            position: absolute;
+            text-align: center;
+            align-content: end;
+        }
+        .box2 .t{
+            left: 17%;
+        }
+        .box2 .y{
+            left: 41.5%;
+        }
+        .box2 .u{
+            left: 66.5%;
+        }
+        .box3{
+            width: 350px;
+            height: 450px;
+            display: flex;
+            position: relative;
+            margin: 60px auto;
+        }
+        .box3 .k,.l,.b{
+            width: 110px;
+            height: 450px;
+            background-color: white;
+            color: black;
+            margin: 0 10px;
+            text-align: center;
+            align-content: end;
+        }
+        .box3 .o,.p{
+            width: 80px;
+            height: 350px;
+            background-color: black;
+            color: white;
+            position: absolute;
+            text-align: center;
+            align-content: end;
+        }
+        .box3 .o{
+            left: 22%;
+        }
+        .box3 .p{
+            left: 56%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="keydetect">
+        <div class="box1">
+            <div class="w">W</div>
+            <div class="E">E</div>
+            <div class="a">A</div>
+            <div class="s">S</div>
+            <div class="d">D</div>
+        </div>
+        <div class="box2">
+            <div class="t">T</div>
+            <div class="y">Y</div>
+            <div class="u">U</div>
+            <div class="f">F</div>
+            <div class="g">G</div>
+            <div class="h">H</div>
+            <div class="j">J</div>
+        </div>
+        <div class="box3">
+            <div class="o">O</div>
+            <div class="p">P</div>
+            <div class="k">K</div>
+            <div class="l">L</div>
+            <div class="b">B</div>
+        </div>
+    </h1>
+
+    <script>
+
+        var a = document.querySelector('.a')
+        var b = document.querySelector('.b')
+        var d = document.querySelector('.d')
+        var E = document.querySelector('.E')
+        var f = document.querySelector('.f')
+        var g = document.querySelector('.g')
+        var h = document.querySelector('.h')
+        var j = document.querySelector('.j')
+        var k = document.querySelector('.k')
+        var l = document.querySelector('.l')
+        var o = document.querySelector('.o')
+        var p = document.querySelector('.p')
+        var s = document.querySelector('.s')
+        var t = document.querySelector('.t')
+        var u = document.querySelector('.u')
+        var w = document.querySelector('.w')
+        var y = document.querySelector('.y')
+
+        var keydetect  = document.getElementById('keydetect')
+
+        document.addEventListener('keydown' , function(e) {
+ 
+            if (e.key == 'a'){
+            var audio = new Audio('040.wav')
+            a.style.background = 'black'
+            a.style.color = 'white'
+            audio.play()
+            }
+
+            if (e.key == 'b'){
+            var audio = new Audio('041.wav')
+            b.style.background = 'black'
+            b.style.color = 'white'
+            audio.play()
+            }
+
+            if (e.key == 'd'){
+            var audio = new Audio('043.wav')
+            d.style.background = 'black'
+            d.style.color = 'white'
+            audio.play()
+            }
+
+            if (e.key == 'e'){
+            var audio = new Audio('044.wav')
+            E.style.background = 'white'
+            E.style.color = 'black'
+            audio.play()
+            }
+
+            if (e.key == 'f'){
+            var audio = new Audio('045.wav')
+            f.style.background = 'black'
+            f.style.color = 'white'
+            audio.play()
+            }
+
+            if (e.key == 'g'){
+            var audio = new Audio('046.wav')
+            g.style.background = 'black'
+            g.style.color = 'white'
+            audio.play()
+            }
+
+            if (e.key == 'h'){
+            var audio = new Audio('047.wav')
+            h.style.background = 'black'
+            h.style.color = 'white'
+            audio.play()
+            }
+
+            if (e.key == 'j'){
+            var audio = new Audio('049.wav')
+            j.style.background = 'black'
+            j.style.color = 'white'
+            audio.play()
+            }
+
+            if (e.key == 'k'){
+            var audio = new Audio('050.wav')
+            k.style.background = 'black'
+            k.style.color = 'white'
+            audio.play()
+            }
+
+            if (e.key == 'l'){
+            var audio = new Audio('051.wav')
+            l.style.background = 'black'
+            l.style.color = 'white'
+            audio.play()
+            }
+
+            if (e.key == 'o'){
+            var audio = new Audio('054.wav')
+            o.style.background = 'white'
+            o.style.color = 'black'
+            audio.play()
+            }
+
+            if (e.key == 'p'){
+            var audio = new Audio('055.wav')
+            p.style.background = 'white'
+            p.style.color = 'black'
+            audio.play()
+            }
+
+            if (e.key == 's'){
+            var audio = new Audio('041.wav')
+            s.style.background = 'black'
+            s.style.color = 'white'
+            audio.play()
+            }
+
+            if (e.key == 't'){
+            var audio = new Audio('042.wav')
+            t.style.background = 'white'
+            t.style.color = 'black'
+            audio.play()
+            }
+
+            if (e.key == 'u'){
+            var audio = new Audio('043.wav')
+            u.style.background = 'white'
+            u.style.color = 'black'
+            audio.play()
+            }
+
+            if (e.key == 'w'){
+            var audio = new Audio('045.wav')
+            w.style.background = 'white'
+            w.style.color = 'black'
+            audio.play()
+            }
+
+            if (e.key == 'y'){
+            var audio = new Audio('047.wav')
+            y.style.background = 'white'
+            y.style.color = 'black'
+            audio.play()
+            }
+
+        })
+
+        document.addEventListener('keyup' , function(e) {
+ 
+            if (e.key == 'a'){
+            a.style.background = 'white'
+            a.style.color = 'black'
+            }
+
+            if (e.key == 'b'){
+            b.style.background = 'white'
+            b.style.color = 'black'
+            }
+
+            if (e.key == 'd'){
+            d.style.background = 'white'
+            d.style.color = 'black'
+            }
+
+            if (e.key == 'e'){
+            E.style.background = 'black'
+            E.style.color = 'white'
+            }
+
+            if (e.key == 'f'){
+            f.style.background = 'white'
+            f.style.color = 'black'
+            }
+
+            if (e.key == 'g'){
+            g.style.background = 'white'
+            g.style.color = 'black'
+            }
+
+            if (e.key == 'h'){
+            h.style.background = 'white'
+            h.style.color = 'black'
+            }
+
+            if (e.key == 'j'){
+            j.style.background = 'white'
+            j.style.color = 'black'
+            }
+
+            if (e.key == 'k'){
+            k.style.background = 'white'
+            k.style.color = 'black'
+            }
+
+            if (e.key == 'l'){
+            l.style.background = 'white'
+            l.style.color = 'black'
+            }
+
+            if (e.key == 'o'){
+            o.style.background = 'black'
+            o.style.color = 'white'
+            }
+
+            if (e.key == 'p'){
+            p.style.background = 'black'
+            p.style.color = 'white'
+            }
+
+            if (e.key == 's'){
+            s.style.background = 'white'
+            s.style.color = 'black'
+            }
+
+            if (e.key == 't'){
+            t.style.background = 'black'
+            t.style.color = 'white'
+            }
+
+            if (e.key == 'u'){
+            u.style.background = 'black'
+            u.style.color = 'white'
+            }
+
+            if (e.key == 'w'){
+            w.style.background = 'black'
+            w.style.color = 'white'
+            }
+
+            if (e.key == 'y'){
+            y.style.background = 'black'
+            y.style.color = 'white'
+            }
+
+        })
+
+    </script>
+
+</body>
+</html>
